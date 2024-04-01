@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Base styles */
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.video-item {
+  width: 30%; /* Adjust as needed */
+  margin: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .video-item {
+    width: 45%; /* Adapt size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-item {
+    width: 90%; /* Adapt size for mobile */
+  }
+}
+.video-item {
+  transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+}
+.search-bar {
+  position: relative;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.navbar-brand .faPlay {
+  margin-right: 10px;
+}
+
+/* Video card hover effect */
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Category button hover effect */
+.category-filter button:hover {
+  background-color: #ddd;
+  transition: background-color 0.2s ease-in-out;
+}
